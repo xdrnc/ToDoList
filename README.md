@@ -1,4 +1,6 @@
 # ToDoList
+ASP.NET Web API with SQL Server storing the data that allows Frontend Vue to interact with the data.
+
 ## web api:
 Run the webapi.sln in Visual Studio.
 
