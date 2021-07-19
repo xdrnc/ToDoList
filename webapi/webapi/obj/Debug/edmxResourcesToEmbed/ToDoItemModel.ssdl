@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GCUK_ToDoItemDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ToDoItem">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="description" Type="nchar" MaxLength="50" />
+    <Property Name="priority" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityContainer Name="GCUK_ToDoItemDBModelStoreContainer">
+    <EntitySet Name="ToDoItem" EntityType="Self.ToDoItem" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GCUK_ToDoItemDBModelStoreContainer" CdmEntityContainer="GCUK_ToDoItemDBEntities">
+    <EntitySetMapping Name="ToDoItems">
+      <EntityTypeMapping TypeName="GCUK_ToDoItemDBModel.ToDoItem">
+        <MappingFragment StoreEntitySet="ToDoItem">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="priority" ColumnName="priority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
